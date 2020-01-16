@@ -8,6 +8,9 @@ class Plase(models.Model):
     description = models.TextField(blank=True)
     is_published = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.title
+
 
 class Anon(models.Model):
     photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/')

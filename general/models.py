@@ -11,6 +11,12 @@ class Plase(models.Model):
     def __str__(self):
         return self.title
 
+class Gallery(models.Model):
+    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    is_published = models.BooleanField(default=True)
+
+    def __getitem__(self, item):
+        return self.photo
 
 class Anon(models.Model):
     photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/')

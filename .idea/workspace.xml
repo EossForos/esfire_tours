@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c71a7b-017f-499a-a637-a596decebc8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/esfire_tours/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/esfire_tours/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esfire_tours/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/esfire_tours/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <workItem from="1579187484416" duration="6721000" />
       <workItem from="1579364898176" duration="7709000" />
       <workItem from="1579427823355" duration="6921000" />
-      <workItem from="1579465703624" duration="1470000" />
+      <workItem from="1579465703624" duration="1858000" />
     </task>
     <servers />
   </component>

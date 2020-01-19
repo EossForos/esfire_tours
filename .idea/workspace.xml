@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="36c71a7b-017f-499a-a637-a596decebc8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/general/templates/general/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/general/templates/general/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +73,8 @@
       <workItem from="1579108845846" duration="3982000" />
       <workItem from="1579113469422" duration="5268000" />
       <workItem from="1579187484416" duration="6721000" />
-      <workItem from="1579364898176" duration="7555000" />
+      <workItem from="1579364898176" duration="7709000" />
+      <workItem from="1579427823355" duration="2962000" />
     </task>
     <servers />
   </component>

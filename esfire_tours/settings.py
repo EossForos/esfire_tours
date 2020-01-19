@@ -25,7 +25,7 @@ SECRET_KEY = 't2#d!2uzdgsr!ylh=y@to^z%2)wr4bcq0^b0%xfcdj=%1xeu9!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['esfire-tours.herokuapp.com']
 
 
 # Application definition

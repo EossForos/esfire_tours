@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c71a7b-017f-499a-a637-a596decebc8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install-3.8" beforeDir="false" afterPath="$PROJECT_DIR$/bin/easy_install-3.8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/esfire_tours/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/esfire_tours/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +80,7 @@
       <workItem from="1579364898176" duration="7709000" />
       <workItem from="1579427823355" duration="6921000" />
       <workItem from="1579465703624" duration="2476000" />
-      <workItem from="1579619887193" duration="7020000" />
+      <workItem from="1579619887193" duration="10382000" />
     </task>
     <servers />
   </component>

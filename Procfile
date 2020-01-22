@@ -1,1 +1,1 @@
-web: gunicorn esfire_tours.app
+web: gunicorn esfire_tours.wsgi

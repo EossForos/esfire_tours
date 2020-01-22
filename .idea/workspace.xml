@@ -4,6 +4,7 @@
     <list default="true" id="36c71a7b-017f-499a-a637-a596decebc8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esfire_tours/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/esfire_tours/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       <workItem from="1579427823355" duration="6921000" />
       <workItem from="1579465703624" duration="2476000" />
       <workItem from="1579619887193" duration="11408000" />
-      <workItem from="1579713550160" duration="4734000" />
+      <workItem from="1579713550160" duration="5067000" />
     </task>
     <servers />
   </component>

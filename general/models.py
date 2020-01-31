@@ -3,7 +3,7 @@ from datetime import datetime
 from PIL import Image
 
 class Plase(models.Model):
-    photo_main = models.ImageField(default='default.jpg', upload_to='photo_main_pics')
+    image = models.ImageField(default='default.jpg', upload_to='photo_main_pics')
     title = models.CharField(max_length=200)
     post_title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
@@ -15,12 +15,12 @@ class Plase(models.Model):
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
-        img = Image.open(self.photo_main.path)
+        img = Image.open(self.image.path)
 
         if img.height > 306 or img.width > 306:
             output_size = (300, 300)
             img.thumbnail(output_size)
-            img.save(self.photo_main.path)
+            img.save(self.image.path)
 
 class Gallery(models.Model):
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/')

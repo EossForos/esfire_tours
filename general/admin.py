@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Anon, Plase, Gallery
 
 class PlaseAdmin(admin.ModelAdmin):
-    list_display = ('id', 'photo_main', 'title', 'post_title', 'is_published',)
+    list_display = ('id', 'image', 'title', 'post_title', 'is_published',)
 admin.site.register(Plase, PlaseAdmin)
 
 

@@ -25,7 +25,7 @@ SECRET_KEY = 't2#d!2uzdgsr!ylh=y@to^z%2)wr4bcq0^b0%xfcdj=%1xeu9!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['esfire-tours.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,13 +78,20 @@ WSGI_APPLICATION = 'esfire_tours.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'esfiretoursdb',
-        'USER': 'postgres',
-        'PASSWORD': 'root',
-        'HOST': 'esfire-tours.herokuapp.com',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.postgresql',
+   #     'NAME': 'esfiretoursdb',
+    #    'USER': 'postgres',
+     #   'PASSWORD': 'root',
+      #  'HOST': 'esfire-tours.herokuapp.com',
+    #}
+#}
 
 
 # Password validation
@@ -131,11 +138,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+#AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+#AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+#AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
+#AWS_S3_FILE_OVERWRITE = False
+#AWS_DEFAULT_ACL = None
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.s3Boto3Storage'
+#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.s3Boto3Storage'

@@ -7,7 +7,7 @@ admin.site.register(Plase, PlaseAdmin)
 
 
 class GalleryAdmin(admin.ModelAdmin):
-    list_display = ('photo', 'is_published')
+    list_display = ('id', 'photo', 'is_published')
 admin.site.register(Gallery, GalleryAdmin)
 
 

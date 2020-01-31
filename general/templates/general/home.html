@@ -168,10 +168,7 @@
                     {% for plase in plases %}
                     <div class="item">
                         <div class="image">
-                            <img src={{ plase.image }} alt="">
-                            <div class="featured-button button">
-                                <a href="#projects">Continue Reading</a>
-                            </div>
+                            <img src={{ plase.image.url }} alt="">
                         </div>
                         <div class="text-content">
                             <h4>{{plase.title}}</h4>
@@ -186,111 +183,6 @@
 
         <!-- Фотогалерея -->
 
-        <section id="projects" class="content-section">
-            <div class="section-heading">
-                <h1>Фото - <br><em>Галерея</em></h1>
-                <p>Praesent pellentesque efficitur magna,
-                    <br>sed pellentesque neque malesuada vitae.</p>
-            </div>
-            <style class="cp-pen-styles">/* Code mostly copied from https://github.com/gpbl/isomorphic500/blob/master/src/style/ThumbnailCollection.scss */
-
-html {
-  font-size: 16px;
-}
-
-#gallery {
-  max-width: 680px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.thumbnail-wrapper {
-  background-color: #333;
-  min-width: 12rem;
-  min-height: 8rem;
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-preferred-size: 8rem;
-      flex-basis: 8rem;
-  margin-right: 2px;
-  margin-bottom: 2px;
-}
-
-.thumbnail-wrapper:nth-child(5n) {
-  -ms-flex-preferred-size: 14rem;
-      flex-basis: 14rem;
-}
-
-.thumbnail-wrapper:nth-child(2n+1) {
-  -ms-flex-preferred-size: 10rem;
-      flex-basis: 10rem;
-}
-
-.thumbnail-wrapper:nth-child(7n+4) {
-  -ms-flex-preferred-size: 20rem;
-      flex-basis: 20rem;
-  min-height: 12rem;
-}
-
-.thumbnail {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.thumbnail:hover {
-  opacity: 0.9;
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
-}</style></head><body>
-<div id="gallery"></div>
-<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
-<script >var images = [
-  "https://i.imgur.com/KaPoFDj.jpg", "http://proof.nationalgeographic.com/files/2015/05/MM8190_12_09_30_10398-copy.jpg",
-  "http://farm9.staticflickr.com//8868//18205140545_c48ca49018_h.jpg",
-  "http://drscdn.500px.org/photo/111857581/m%3D2048/2ecfe0e70accd597de673b532e8a8666", "http://fc02.deviantart.net/fs70/f/2014/029/9/1/rophaien_by_tobiasrichter-d4tniwk.jpg",
-  "https://i.imgur.com/CQg225T.jpg",
-  "http://farm3.staticflickr.com//2946//15449458345_4457eacb17_b.jpg",
-  "https://i.imgur.com/Y2802th.jpg",
-  "https://i.imgur.com/KZsmUi2.jpg"
-];
-
-var gallery = document.getElementById("gallery");
-
-for (var i = 0; i < images.length; i++) {if (window.CP.shouldStopExecution(1)){break;}
-  var thumbnailWrapper = document.createElement("div");
-  thumbnailWrapper.className = "thumbnail-wrapper";
-
-  var thumbnail = document.createElement("a");
-  thumbnail.className = "thumbnail";
-  thumbnail.setAttribute('style', 'background-image:url(\"' + images[i] + '\");');
-  thumbnail.setAttribute('href', images[i]);
-
-  thumbnailWrapper.appendChild(thumbnail);
-  gallery.appendChild(thumbnailWrapper);
-}
-window.CP.exitedLoop(1);
-
-
-console.log(gallery)
-//# sourceURL=pen.js
-</script>
-</body></html>
-
-        </section>
 
         <!-- VIDEO -->
 
@@ -314,7 +206,7 @@ console.log(gallery)
                             <div class="bt-play">Play</div>
                         </div>
                         <div class="video-container">
-                            <iframe width="100%" height="520" src="https://www.youtube.com/watch?v=L6IlTk6tJL4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/L6IlTk6tJL4?start=200" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

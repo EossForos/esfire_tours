@@ -3,7 +3,7 @@ from datetime import datetime
 from PIL import Image
 
 class Plase(models.Model):
-    image = models.ImageField(default='default.jpg', upload_to='photo_main_pics')
+    image = models.ImageField(default='default.jpg', upload_to='img/photo_main_pics')
     title = models.CharField(max_length=200)
     post_title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
@@ -23,10 +23,10 @@ class Plase(models.Model):
             img.save(self.image.path)
 
 class Gallery(models.Model):
-    photo = models.ImageField(upload_to='photos/%Y/%m/%d/')
+    photo = models.ImageField(default='default.jpg', upload_to='img/gallery_pics')
     is_published = models.BooleanField(default=True)
 
-    def __getitem__(self, item):
+    def __del__(self):
         return self.photo
 
 class Anon(models.Model):

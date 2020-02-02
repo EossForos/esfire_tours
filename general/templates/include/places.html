@@ -1,0 +1,25 @@
+ <div class="page-content">
+        <section id="featured" class="content-section">
+            <div class="section-heading">
+                <h1>Интересные<br><em>Места</em></h1>
+                <p>Praesent pellentesque efficitur magna,
+                    <br>sed pellentesque neque malesuada vitae.</p>
+            </div>
+
+            <div class="section-content">
+                <div class="owl-carousel owl-theme">
+                    {% for plase in plases %}
+                    <div class="item">
+                        <div class="image">
+                            <img src={{ plase.image.url }} alt="">
+                        </div>
+                        <div class="text-content">
+                            <h4>{{plase.title}}</h4>
+                            <span>{{ plase.post_title }}</span>
+                            <p>{{ plase.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>

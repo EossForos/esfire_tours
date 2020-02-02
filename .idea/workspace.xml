@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36c71a7b-017f-499a-a637-a596decebc8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/general/templates/general/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esfire_tours/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/esfire_tours/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/general/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/general/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general/templates/general/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/general/templates/general/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/general/templates/general/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/general/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,10 @@
       <workItem from="1579619887193" duration="11408000" />
       <workItem from="1579713550160" duration="6372000" />
       <workItem from="1579797015267" duration="10000" />
-      <workItem from="1580487954576" duration="12434000" />
+      <workItem from="1580487954576" duration="12549000" />
+      <workItem from="1580578830197" duration="26000" />
+      <workItem from="1580666572173" duration="6009000" />
+      <workItem from="1580673047946" duration="5648000" />
     </task>
     <servers />
   </component>

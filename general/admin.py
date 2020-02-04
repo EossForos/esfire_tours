@@ -1,26 +1,25 @@
 from django.contrib import admin
 from .models import Anon, Plase, Gallery
 
-# admin.site.register(Anon)
-# admin.site.register(Plase)
-# admin.site.register(Gallery)
 
 
+@admin.register(Plase)
 class PlaseAdmin(admin.ModelAdmin):
-    list_display = ('id', 'image', 'title', 'post_title', 'is_published',)
-admin.site.register(Plase, PlaseAdmin)
+    """Интересные места"""
+    list_display = ('id', 'title', 'post_title', 'image', 'is_published',)
 
 
+@admin.register(Gallery)
 class GalleryAdmin(admin.ModelAdmin):
+    """Фотогалерея"""
     list_display = ('id', 'photo', 'is_published')
-admin.site.register(Gallery, GalleryAdmin)
 
 
+@admin.register(Anon)
 class AnonAdmin(admin.ModelAdmin):
+    """Анонсы туров"""
     list_display = ('id', 'title', 'is_published', 'date')
     list_display_links = ('id', 'title')
     list_filter = (['title'])
     search_fields = ('title', 'description')
     list_per_page = 25
-
-admin.site.register(Anon, AnonAdmin)

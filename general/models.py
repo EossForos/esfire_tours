@@ -4,7 +4,7 @@ from PIL import Image
 
 class Plase(models.Model):
     """Интерестные места"""
-    image = models.ImageField("Изображение", default='default.jpg', upload_to='img/photo_main_pics')
+    image = models.ImageField("Изображение", default='default.jpg', upload_to='places/')
     title = models.CharField("Заголовок", max_length=200)
     post_title = models.CharField("Пост-заголовок", max_length=200)
     description = models.TextField("Содержание", blank=True)
@@ -29,7 +29,7 @@ class Plase(models.Model):
 
 class Gallery(models.Model):
     """Галлерея"""
-    photo = models.ImageField("Изображение", default='default.jpg', upload_to='img/gallery_pics')
+    photo = models.ImageField("Изображение", default='default.jpg', upload_to='gallery/')
     is_published = models.BooleanField("Опубликовано", default=True)
 
     def __del__(self):
@@ -43,7 +43,7 @@ class Gallery(models.Model):
 
 class Anon(models.Model):
     """Анонсы Туров"""
-    photo_main = models.ImageField("Изображение", default='default.jpg', upload_to='img/anons')
+    photo_main = models.ImageField("Изображение", default='default.jpg', upload_to='anons/')
     title = models.CharField("Заголовок", max_length=200)
     date = models.CharField("Дата тура", max_length=200)
     description = models.TextField("Содержание", blank=True)
